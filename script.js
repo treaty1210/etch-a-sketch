@@ -24,9 +24,16 @@ function createGrid(gridSize) {
             grid.classList.add("grid")
                 grid.style.width = `${widthAndHeight}px`;
                 grid.style.height = `${widthAndHeight}px`;
+            //Random color function
+            function randomColor() {
+                let colorOne = Math.floor(Math.random() * 256);
+                let colorTwo = Math.floor(Math.random() * 256);
+                let colorThree = Math.floor(Math.random() * 256);
+                return (`rgb(${colorOne}, ${colorTwo}, ${colorThree})`) 
+            }
             //Move hover effect eventlistener here
             grid.addEventListener("mouseover", () => {
-                grid.style.backgroundColor = "aquamarine";
+                grid.style.backgroundColor = randomColor();
                 }) 
             row.appendChild(grid);
         } 
