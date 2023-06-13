@@ -1,0 +1,13 @@
+/* Container set to flex and wrap */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+}
+
+/* Make grid visible with borders */
+.grid {
+    border: 2px solid black;
+    height: 16px;
+    width: 16px;
+}
