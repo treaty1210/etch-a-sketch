@@ -1,5 +1,7 @@
 //Important Query Selectors
 const body = document.querySelector("body");
+const html = document.querySelector("html");
+
 
 //Container Div
 const container = document.createElement("div");
@@ -13,3 +15,10 @@ for (i = 0; i < 256; i++) {
     container.appendChild(grid);
 };
 
+//Hover effect to change color
+const box = document.querySelectorAll(".grid");
+box.forEach(grid => {
+    grid.addEventListener("mouseover", () => {
+    grid.style.backgroundColor = "aquamarine";
+    }) 
+});
