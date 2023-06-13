@@ -2,12 +2,14 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 320px;
+}
+
+.removeGrid {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Make grid visible with borders */
 .grid {
     border: 2px solid black;
-    height: 16px;
-    width: 16px;
 }
